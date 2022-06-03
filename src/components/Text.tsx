@@ -1,11 +1,15 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent } from 'react';
 
 type TextProps = {
-  text: string
-}
+  text: string;
+};
 
 const Text: FunctionComponent<TextProps> = function ({ text }) {
-  return <div>{text}</div>
-}
+  return (
+    <div>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </div>
+  );
+};
 
-export default Text
+export default Text;
